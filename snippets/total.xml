@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- lineage -->
+  <project path="hardware/qcom/audio" name="LineageOS/android_hardware_qcom_audio" />
+  <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" />
+  <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" />
+  <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" />
+  <project path="bionic" name="LineageOS/android_bionic" />
+  <project path="build/make" name="LineageOS/android_build" groups="pdk" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />
+  <project path="frameworks/opt/telephony" name="LineageOS/android_frameworks_opt_telephony" />
+  <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" />
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" />
+  <project path="hardware/qcom-caf/wlan" name="LineageOS/android_hardware_qcom_wlan" revision="lineage-20.0-caf" />
+  <project path="hardware/ril" name="LineageOS/android_hardware_ril" />
+  <project path="packages/modules/adb" name="LineageOS/android_packages_modules_adb" />
+  <project path="packages/modules/Connectivity" name="LineageOS/android_packages_modules_Connectivity" />
+  <project path="packages/modules/Wifi" name="LineageOS/android_packages_modules_Wifi" />
+  <project path="system/core" name="LineageOS/android_system_core" />
+  <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
+  <!--project path="frameworks/av" name="LineageOS/android_frameworks_av" /-->
+  <project path="frameworks/base" name="LineageOS/android_frameworks_base" />
+  <!--project path="frameworks/native" name="LineageOS/android_frameworks_native" /-->
+  <project path="lineage-sdk" name="LineageOS/android_lineage-sdk" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
+  <!-- aosp -->
+  <project path="art" name="platform/art" groups="pdk" remote="aosp" />
+  <project path="external/jemalloc_new" name="platform/external/jemalloc_new" groups="pdk" remote="aosp" />
+  <project path="external/perfetto" name="platform/external/perfetto" groups="pdk" remote="aosp" />
+  <project path="frameworks/libs/net" name="platform/frameworks/libs/net" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" remote="aosp" />
+  <project path="packages/modules/NetworkStack" name="platform/packages/modules/NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+
+</manifest>
